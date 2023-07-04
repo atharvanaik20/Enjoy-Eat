@@ -1,70 +1,45 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Enjoy Eat - Frontend
 
-## Available Scripts
+## Project Overview
+Enjoy Eat is a food delivery app that provides a user-friendly platform for customers to order food from restaurants. This repository contains the frontend code developed using React JS, HTML, CSS, and JavaScript for the Enjoy Eat application.
 
-In the project directory, you can run:
+## Technology Stack
+- **Frontend**: React JS, HTML, CSS, JavaScript
 
-### `npm start`
+## Features
+- User Registration: Customers can register on the Enjoy Eat app by providing their details such as name, phone number, email, and address.
+- User Login: Registered users can log in to their accounts using their email and password.
+- Menu Browsing: Customers can browse the menu items available from various restaurants.
+- Order Placement: Customers can place orders for their desired menu items.
+- Order History: Customers can view their order history and track the status of their past orders.
+- Admin Dashboard: The admin has access to a dashboard where they can manage branch managers, menu items, and view order logs.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
+The project has the following structure:
+- **index.html**: The main HTML file for the app, which is loaded when the user visits the site. It includes a `<div>` tag with an id="root", where React components are rendered.
+- **src**: This directory contains the source code for the React components and other supporting files.
+  - **components**: This directory contains reusable components used throughout the application, such as Navbar, Footer, etc.
+  - **pages**: This directory contains the main pages of the application, such as Home, Menu, Order History, etc.
+  - **services**: This directory contains the services responsible for making API calls to the backend.
+  - **styles**: This directory contains the CSS files for styling the components.
+  - **App.js**: The main component that acts as the entry point for the application. It contains the routing logic and renders the necessary components based on the current URL.
+  - **index.js**: The entry point of the application where the ReactDOM.render method is used to render the App component to the root element of the HTML document.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
+To set up and run the Enjoy Eat frontend code locally, follow these steps:
+1. Clone the repository to your local machine.
+2. Install the dependencies by running the command `npm install`.
+3. Start the development server by running the command `npm start`.
+4. The frontend application will be accessible at `http://localhost:3000` in your browser.
 
-### `npm test`
+## Contributing
+Contributions are welcome! If you'd like to contribute to the Enjoy Eat frontend code, please follow these guidelines:
+- Fork the repository and create a new branch for your feature or bug fix.
+- Make your changes and test them thoroughly.
+- Submit a pull request describing your changes and the problem they solve.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to modify and customize the README file according to your project's specific details, add installation instructions, and provide any other relevant information for users of the frontend code repository.
