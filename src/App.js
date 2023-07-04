@@ -1,15 +1,33 @@
 import React from "react";
+import LocateMe from "./component/LocateMe";
 import HomePage from "./pages/home";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from "./component/login";
+import CustomerRegister from "./component/customerRegister";
+import Header from "./component/common/header";
+import Footer from "./component/common/footer";
+import ViewCard from "./component/viewCard";
 
+const App = () => {
+  return (
+    <div>
 
-// This is comment
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/cart" element={<ViewCard />} />
+          <Route path="/customerregister" element={<CustomerRegister />} />
+        </Routes>
 
-const App=()=>{
-return(
-  <div>
-      <HomePage/>
-  </div>
-)
+        <Footer />
+      </BrowserRouter>
+
+      {<LocateMe />}
+    </div>
+  )
 
 };
 export default App;

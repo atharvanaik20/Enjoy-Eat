@@ -1,4 +1,4 @@
-import { tab } from "@testing-library/user-event/dist/tab";
+// import { tab } from "@testing-library/user-event/dist/tab";
 import React from "react";
 import "./tabOptions.css";
 
@@ -21,7 +21,7 @@ const TabOptions=({activetab,setActivetab})=>{
         <div className="tab-options">
             <div className="max-width options-wrapper">
                 {tabs.map((item)=>{
-                return <div onClick={()=>setActivetab(item.name)
+                return <div key={item.name} onClick={()=>setActivetab(item.name)
                 } className={`tab-item absolute-center cursor-pointer ${activetab === item.name && "active-tab"}`}>
                        <div className="tab-image-container absolute-center"
                        style={{

@@ -4,6 +4,7 @@ import Filter from "../common/Filter";
 import DeliveryCollections from "./DeliveryCollections";
 import ExploreSection from "../common/exploreSection";
 import {restaurants} from "../../data/restaurants";
+import MenuList from "../../data/menu";
 
 const deliveryfilter=[
     {
@@ -24,7 +25,8 @@ const deliveryfilter=[
         title:"Great Offers"
     }
 ];
-const restaurantlist=restaurants;
+const restaurantlist = JSON.parse(localStorage.getItem('MenuList'));
+
 const Vegetarian=()=>{
     return(
         <div>

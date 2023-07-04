@@ -7,7 +7,7 @@ return(
       <div className="max-width explore-section"> 
       <div className="explore-grid">
           {list.map((restaurant)=>{
-              return <ExploreCard restaurant={restaurant}/>
+              return <ExploreCard restaurant={restaurant} key={restaurant.menuId}/>
           })}
 
       </div>

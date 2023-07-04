@@ -2,12 +2,11 @@ import React from "react";
 import "./filter.css"
 import FilterItem from "./filteritem";
 
-const Filter=({filterlist})=>
-{
+const Filter = ({ filterlist }) => {
     return (<div className="filters">
-       { filterlist && filterlist.map((filter)=>{
-           return<div> <FilterItem filter={filter} key={filter.id}/></div>
-       })}
+        {filterlist && filterlist.map((filter) => {
+            return <div key={filter.id}> <FilterItem filter={filter} /></div>
+        })}
     </div>
     )
 }

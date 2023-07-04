@@ -26,7 +26,7 @@ const DeliveryCollections=()=>{
         },
         {
             id:4,
-            title:"Thalipeed",
+            title:"Thalipith",
             cover:"https://b.zmtcdn.com/data/dish_photos/d77/103ebc996b108ac0ba553e16a2e13d77.jpg"
         },
         {
@@ -54,7 +54,7 @@ return (
     <div className="collection-title">Love to Eat  </div>
     <Slider {...settings}>
     {deliveryitem.map((items)=>{
-        return <div> <DeliveryItem item={items}/></div>
+        return <div key={items.id}> <DeliveryItem item={items}/></div>
     })}
     </Slider>
     </div>
