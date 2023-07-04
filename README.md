@@ -1,65 +1,93 @@
-# Enjoy-Eat
-# Online Food Delivery System - ENJOY EAT
 
-## Introduction:
-This repository contains the source code and documentation for the development of the Online Food Delivery System - ENJOY EAT. The system aims to provide a convenient platform for customers to order food online, as well as assist restaurant owners in managing their branches efficiently. The system consists of four main parts: Customer, Admin, Branch Manager, and Delivery Executive.
+# Enjoy Eat - Spring Boot Backend
 
-## Business Requirements Overview:
-- ENJOY EAT System is a public web application.
-- The system will initially target customers in Maharashtra, India.
-- There are two main types of users: restaurant vendors and customers.
-- Customers can search for food items on the website.
-- ENJOY EAT System facilitates efficient communication and transactions between restaurant vendors and customers.
-- The system can be managed by an administrator.
+## Project Overview
+Enjoy Eat is a food delivery app that aims to provide a user-friendly platform for customers to order food from restaurants. This repository contains the backend code developed using Spring Boot, which handles the business logic, server-side validation, and database communication for the Enjoy Eat application.
 
-## Functional Requirements Overview:
-The ENJOY EAT System is divided into four modules:
+## Technology Stack
+- **Frontend**: React JS, HTML, CSS, JavaScript
+- **Backend**: Spring Boot (Java)
+- **Database**: MySQL
 
-### 1. Customer Module:
-- Customers can view available food items online.
-- Customers can select food items from the menu, view details such as name, price, and quantity, and manage their order in a personalized manner.
-- Only registered customers can place orders, cancel orders, view order history, and update their personal and delivery details.
+## Reason for Choosing Technology
+- **React JS**:
+  - High performance and faster development due to the implementation of virtual DOM and component-based architecture.
+  - Strong adoption by the industry.
 
-### 2. Admin Module:
-- Administrators can log in and register branch managers.
-- Admins have the authority to add, update, and delete food menu items.
-- They can view order logs and payment logs for all branches, as well as generate reports.
+- **Spring Boot**:
+  - Faster development with reduced boilerplate code.
+  - Default opinionated approach with automatic dependency management.
+  - Built-in embedded Tomcat server.
 
-### 3. Branch Manager Module:
-- Branch managers can log in and assign delivery executives to received orders.
-- They can view order logs, payment logs, and reports specific to their respective branches.
-- Note: Delivery executive details will be hardcoded as it is part of future scope.
+- **MySQL**:
+  - Follows ACID properties.
+  - Open-source and cost-effective.
+  - Easy-to-understand syntax and scalability.
 
-### 4. Delivery Executive Module:
-- Delivery executives can log in and access order details.
-- They are responsible for delivering parcels to customers and updating the delivery status.
+## Users and Privileges
+The Enjoy Eat application consists of four user roles with different privileges:
+1. **Admin**:
+   - Login
+   - Register branch managers
+   - View all branch managers
+   - Add, update, and remove menu items
+   - View order logs of all branches
 
-## Non-Functional Requirements:
-- The website should have a professional design, user-friendly interface, and a visually appealing color scheme.
-- Usability guidelines should be followed for menus, navigation, colors, links, and other actions on the screens.
-- The system should prioritize a seamless user experience with minimal steps required to complete tasks.
+2. **Customer**:
+   - Register
+   - Login
+   - Browse menu items
+   - Place orders
+   - View order history
 
-Please refer to the specific modules and their respective documentation for more details on the functionality and implementation of the ENJOY EAT System.
+3. **Branch Manager**:
+   - Login
+   - Get details of placed orders
+   - View status of delivery executives (available or occupied)
+   - View order logs for their branch
+   - Assign delivery executives to placed orders
+   - Update order status
 
+4. **Delivery Executive**:
+   - Login
+   - Get assigned orders
+   - Deliver orders to customers
+   - Update order status
+   - Update availability status
 
-## Conclusion and Future Scope
+## Workflow
+1. Documentation: The project started with preparing Software Requirements Specification (SRS) documents, ER diagrams, and page navigation diagrams.
+2. Database Design: The team designed nine tables to structure the database, including tables for logins, customers, branch managers, branches, delivery executives, addresses, orders, order items, and menus.
+3. Frontend and Backend Development: The frontend was developed using React JS, while the backend was developed using Spring Boot Java. The server-side logic, business rules, and database communication were implemented in the backend code.
+4. Integration: The frontend and backend were integrated to establish communication between the client-side and server-side components.
+5. Testing and Bug Fixing: The application was thoroughly tested for functionality, performance, and user experience. Any bugs or issues identified during testing were fixed.
+6. Deployment: The application was deployed to a production environment to make it accessible to users.
 
-ENJOY EAT provides a better way of managing the food ordering system, from placing the order to its delivery. Our system offers a user-friendly platform where customers can easily browse the menu, place their orders, and have them delivered to their doorstep, particularly with cash-on-delivery as the current payment mode. In the future, we plan to integrate online payment methods to enhance convenience and flexibility for customers.
+## Database Design
+The database design for Enjoy Eat includes the following tables:
+1. logins
+2. customers
+3. branch_managers
+4. branches
+5. delivery_executives
+6. addresses
+7. orders
+8. order_items
+9. menus
 
-The hoteling industry is an evergreen industry as people will continue to dine out to enjoy a break from their everyday home-cooked meals. With ENJOY EAT, we aim to bring restaurants a step closer to customers' homes by enabling restaurant owners to efficiently manage and streamline the online food delivery process.
+## Snapshots
+Various snapshots of the application's user interface and functionality were taken throughout the development process to document the progress and changes made.
 
-### Future Scope:
-- Online Payment Integration: We plan to implement secure online payment methods to allow customers to make digital payments for their orders, providing a seamless and convenient experience.
-- Advanced Order Tracking: Enhancing the system with real-time order tracking functionality will enable customers to track the progress of their orders from preparation to delivery, ensuring transparency and improving customer satisfaction.
-- Personalized Recommendations: Implementing a recommendation system based on customer preferences and ordering history can enhance the user experience by providing personalized food recommendations and offers.
-- Analytics and Reporting: Adding comprehensive analytics and reporting features will help restaurant owners gain insights into their business performance, customer trends, popular food items, and sales data, facilitating data-driven decision-making.
-- Mobile Application: Developing a mobile application for ENJOY EAT will expand its reach and provide a more convenient way for customers to browse the menu, place orders, and track deliveries using their smartphones.
+## Getting Started
+To set up and run the Enjoy Eat backend code locally, follow these steps:
+1. Clone the repository to your local machine.
+2. Set up the MySQL database and configure the connection details in the application.properties file.
+3. Build and run the Spring Boot application using an IDE or the command line.
+4. The backend server will start running on the specified port, and the endpoints will be accessible for the frontend to
 
-We welcome contributions from the open-source community to further enhance the ENJOY EAT system and bring more innovative features to benefit both customers and restaurant owners.
+ consume.
 
-## License Information:
-This project is licensed under the MIT License. Please see the LICENSE file for more details.
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Feel free to customize the section according to your project's specific details and add any additional future scope or conclusion points that are relevant to your system.
-
-Note: This README.md file provides an overview of the project. Please refer to the relevant documentation and source code files for detailed information.
+Feel free to modify and customize the README file according to your project's specific details, add installation instructions, and provide any other relevant information for users of the backend code repository.
